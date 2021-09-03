@@ -1,0 +1,17 @@
+
+<!-- saved from url=(0063)http://byrushan.com/projects/ma/1-5-2/angular/views/common.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><header id="header" data-current-skin="{{currentSkin}}" data-ng-include="" src="&#39;template/header.html&#39;" data-ng-controller="headerCtrl as hctrl"></header>
+
+<section id="main">
+    <aside id="sidebar" data-ng-include="" src="&#39;template/sidebar-left.html&#39;" data-ng-class="{ &#39;toggled&#39;: sidebarToggle.left === true }"></aside>
+
+    <aside id="chat" data-ng-include="" src="&#39;template/chat.html&#39;" data-ng-class="{ &#39;toggled&#39;: sidebarToggle.right === true }"></aside>
+
+    <section id="content" class="page-view" data-ui-view=""></section>
+
+</section>
+
+<footer id="footer" data-ng-include="" src="&#39;template/footer.html&#39;"></footer>
+
+
+</body></html>

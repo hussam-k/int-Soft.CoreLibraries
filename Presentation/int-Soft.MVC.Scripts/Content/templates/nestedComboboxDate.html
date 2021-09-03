@@ -1,0 +1,45 @@
+﻿<div class="input-group">
+    <span style="cursor: pointer" class="input-group-addon">
+        <i class="zmdi zmdi-calendar ma-icon"></i>
+    </span>
+    <div class="fg-line">
+        <div class="col-md-4">
+            <select data-ng-model="model.year"
+                    data-ng-init='generateYearList()'
+                    chosen=""
+                    data-placeholder="{{'SELECT_YEAR' | translate}}"
+                    inherit-select-classes="true"
+                    id="{{yearId}}"
+                    name="{{yearId}}"
+                    class="w-100"
+                    data-ng-options="s as s for s in yearList">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <select data-ng-model="model.month"
+                    data-ng-init='generateMonthList()'
+                    chosen=""
+                    data-placeholder="{{'SELECT_MONTH' | translate}}"
+                    inherit-select-classes="true"
+                    id="{{monthId}}"
+                    name="{{monthId}}"
+                    class="w-100"
+                    data-ng-options="s as s for s in monthList">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <select data-ng-model="model.day"
+                    chosen=""
+                    data-placeholder="{{'SELECT_DAY' | translate}}"
+                    inherit-select-classes="true"
+                    id="{{dayId}}"
+                    name="{{dayId}}"
+                    class="w-100"
+                    data-ng-options="s as s for s in dayList">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+</div>

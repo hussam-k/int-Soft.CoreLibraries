@@ -1,0 +1,42 @@
+﻿<div data-current-skin-before="{{currentSkin}}">
+    <div class="login-content toggled">
+        <div class="lc-block toggled" id="l-login">
+            <div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img data-ng-src="{{logoIconSource}}" alt="" />
+                </div>
+                <form class="col-lg-6 col-md-6 col-sm-12" data-ng-submit="submit()" id="loginForm" name="loginForm">
+                    <div class="input-group m-b-20">
+                        <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
+                        <div class="fg-line">
+                            <input required data-ng-model="model.username" class="form-control" type="text"
+                                   data-ng-required="true"
+                                   data-ng-disabled="isLoading"
+                                   placeholder="{{usernamePlaceHolder}}"
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="input-group m-b-20">
+                        <span class="input-group-addon"><i class="zmdi zmdi-key"></i></span>
+                        <div class="fg-line">
+                            <input required data-ng-model="model.password" type="password" class="form-control"
+                                   data-ng-required="true"
+                                   data-ng-disabled="isLoading"
+                                   placeholder="{{passwordPlaceHolder}}" />
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <input type="submit" hidden />
+                </form>
+            </div>
+            <button class="btn btn-login btn-danger btn-float waves-effect waves-circle"
+                    data-ng-disabled="isLoading" data-ng-click="submit()">
+                <i class="zmdi zmdi-mail-send"></i>
+            </button>
+            <ul class="login-navigation">
+                <li class="bgm-red" ui-sref="accounts-forgotPassword" data-ng-show="{{showForgotYourPasswordButton}}">{{forgotYourPasswordText}}</li>
+                <li class="bgm-orange" ui-sref="accounts-reactivate" data-ng-show="{{showReactivateButton}}">{{reactivateText}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

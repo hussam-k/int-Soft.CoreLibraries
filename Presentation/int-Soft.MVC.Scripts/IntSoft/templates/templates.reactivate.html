@@ -1,0 +1,30 @@
+﻿<div data-current-skin-before="{{currentSkin}}">
+    <div class="login-content toggled">
+        <div class="lc-block toggled" id="l-login">
+            <div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img data-ng-src="{{logoIconSource}}" />
+                </div>
+                <form class="col-lg-6 col-md-6 col-sm-12" data-ng-submit="submit()" id="reactivateForm">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
+                            <input required type="email" data-ng-model="model.email" class="form-control"
+                                   placeholder="{{emailPlaceHolder}}" />
+                        </div>
+                    </div>
+                    <input type="submit" hidden />
+                </form>
+            </div>
+            <button class="btn btn-login btn-danger btn-float waves-effect waves-circle"
+                    data-ng-disabled="isLoading"
+                    data-ng-click="submit()">
+                <i class="zmdi zmdi-mail-send"></i>
+            </button>
+            <ul class="login-navigation">
+                <li class="bgm-green" ui-sref="accounts-login" data-ng-show="{{showLoginButton}}">{{loginText}}</li>
+                <li class="bgm-red" ui-sref="accounts-forgotPassword" data-ng-show="{{showForgotYourPasswordButton}}">{{forgotYourPasswordText}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

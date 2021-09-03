@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountInformation" xml:space="preserve">
+    <value>معلومات الحساب</value>
+  </data>
+  <data name="AttachmentFile" xml:space="preserve">
+    <value>ملف مرفق</value>
+  </data>
+  <data name="BasicInformation" xml:space="preserve">
+    <value>المعلومات الأساسية</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>الفئة</value>
+  </data>
+  <data name="ChangeAttachmentFile" xml:space="preserve">
+    <value>تغيير الملف</value>
+  </data>
+  <data name="Cities" xml:space="preserve">
+    <value>المدن</value>
+  </data>
+  <data name="ClearFilters" xml:space="preserve">
+    <value>تفريغ</value>
+  </data>
+  <data name="ContactInformation" xml:space="preserve">
+    <value>معلومات الاتصال</value>
+  </data>
+  <data name="ContactInformationInDescription" xml:space="preserve">
+    <value>تم إضافة معلومات التواصل في غير المكان المخصص لها.</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>البلد</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>كلمة المرور الحالية</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>الخبرة والهوايات</value>
+  </data>
+  <data name="DuplicatedEmail" xml:space="preserve">
+    <value>هذا البريد الالكتروني مسجل مسبقاً</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>البريد الالكتروني</value>
+  </data>
+  <data name="EmailIsInvalid" xml:space="preserve">
+    <value>صيغة البريد الالكتروني غير صحيحة</value>
+  </data>
+  <data name="EmailOrPhoneNotVerified" xml:space="preserve">
+    <value>لا يمكن تنفيذ هذا الطلب إلى أن تقوم بتأكيد بريدك الالكتروني ورقم الموبايل</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>تاريخ النهاية</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>أنثى</value>
+  </data>
+  <data name="ForgotYourPassword" xml:space="preserve">
+    <value>نسيت كلمة المرور؟</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>الاسم الكامل</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>الجنس</value>
+  </data>
+  <data name="Governorate" xml:space="preserve">
+    <value>المحافظة</value>
+  </data>
+  <data name="HowCanWeHelpYou" xml:space="preserve">
+    <value>كيف نستطيع مساعدتك؟ (1000 حرف)</value>
+  </data>
+  <data name="InvalidPhoneNumber" xml:space="preserve">
+    <value>رقم الموبايل غير صحيح</value>
+  </data>
+  <data name="InvalidPhoneVerificationCode" xml:space="preserve">
+    <value>رقم التأكد غير صحيح!</value>
+  </data>
+  <data name="LanguageLegend" xml:space="preserve">
+    <value>قائمة بكل اللغات</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>قائمة اللغات</value>
+  </data>
+  <data name="LatinName" xml:space="preserve">
+    <value>الاسم اللاتيني</value>
+  </data>
+  <data name="LocationParent" xml:space="preserve">
+    <value>تابعة لي</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>المناطق</value>
+  </data>
+  <data name="LocationType" xml:space="preserve">
+    <value>نوع المنطقة</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>ذكر</value>
+  </data>
+  <data name="MentorName" xml:space="preserve">
+    <value>اسم الاستاذ</value>
+  </data>
+  <data name="MostDemandedMentorsTemplate" xml:space="preserve">
+    <value>معلمي {0} في {1}</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="NewPhoneNumber" xml:space="preserve">
+    <value>رقم الموبايل الجديد</value>
+  </data>
+  <data name="NewRmail" xml:space="preserve">
+    <value>البريد الالكتروني الجديد</value>
+  </data>
+  <data name="NoLanguageSpecified" xml:space="preserve">
+    <value>لا يوجد لغات</value>
+  </data>
+  <data name="NoLocationSpecified" xml:space="preserve">
+    <value>لايوجد مناطق</value>
+  </data>
+  <data name="NoNotifications" xml:space="preserve">
+    <value>لا يوجد تنبيهات</value>
+  </data>
+  <data name="NoSubjectSpecified" xml:space="preserve">
+    <value>لايوجد مواد</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="Notifications" xml:space="preserve">
+    <value>التنبيهات</value>
+  </data>
+  <data name="NotRatedYet" xml:space="preserve">
+    <value>لم يتم تقييمه بعد!</value>
+  </data>
+  <data name="NumberOfOperations" xml:space="preserve">
+    <value>عدد العمليات</value>
+  </data>
+  <data name="NumberOfUsers" xml:space="preserve">
+    <value>عدد المستخدمين</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>موافق</value>
+  </data>
+  <data name="Operation" xml:space="preserve">
+    <value>العملية</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="PasswordsDontMatch" xml:space="preserve">
+    <value>كلمة المرور والتأكيد غير متطابقين</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>رقم الموبايل</value>
+  </data>
+  <data name="PhoneVerification" xml:space="preserve">
+    <value>تأكيد رقم الموبايل</value>
+  </data>
+  <data name="PhoneVerificationNumberLabel" xml:space="preserve">
+    <value>ادخل رمز التأكد الذي استلمته على هاتفك</value>
+  </data>
+  <data name="PhoneVerificationNumberPlaceHolder" xml:space="preserve">
+    <value>رمز التأكد من 6 أرقام</value>
+  </data>
+  <data name="Picture" xml:space="preserve">
+    <value>الصورة</value>
+  </data>
+  <data name="PointsAmount" xml:space="preserve">
+    <value>كمية النقاط</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>السابق</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>السعر</value>
+  </data>
+  <data name="PricePerHour" xml:space="preserve">
+    <value>سعر الساعة</value>
+  </data>
+  <data name="ProfileInformation" xml:space="preserve">
+    <value>معلومات الملف</value>
+  </data>
+  <data name="QualificationNameTemplate" xml:space="preserve">
+    <value>درجة {0} في {1}، من {2}</value>
+  </data>
+  <data name="Qualifications" xml:space="preserve">
+    <value>التعليم</value>
+  </data>
+  <data name="Reactivate" xml:space="preserve">
+    <value>إعادة تفعيل الحساب</value>
+  </data>
+  <data name="RejectionList" xml:space="preserve">
+    <value>لائحة أسباب الرفض</value>
+  </data>
+  <data name="RejectionListLegend" xml:space="preserve">
+    <value>يرجى تحدد الأسباب التي تبرر الرفض</value>
+  </data>
+  <data name="RequiredFieldMessage" xml:space="preserve">
+    <value>يجب ادخال قيمة هذا الحقل</value>
+  </data>
+  <data name="Resend" xml:space="preserve">
+    <value>إعادة إرسال</value>
+  </data>
+  <data name="ResendPhoneVerificationCodeMessage" xml:space="preserve">
+    <value>لم يصلك رمز التأكيد؟ يمكنك إعادة ارسال الرمز بعد</value>
+  </data>
+  <data name="Reviews" xml:space="preserve">
+    <value>التقييمات</value>
+  </data>
+  <data name="RoleInformation" xml:space="preserve">
+    <value>معلومات الدور</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="SearchByMentorName" xml:space="preserve">
+    <value>البحث باسم المعلم</value>
+  </data>
+  <data name="SelectAttachmentFile" xml:space="preserve">
+    <value>يرجى اختيار ملف مرفق</value>
+  </data>
+  <data name="SelectCities" xml:space="preserve">
+    <value>اختر جميع المدن</value>
+  </data>
+  <data name="SelectCity" xml:space="preserve">
+    <value>اختر المدينة</value>
+  </data>
+  <data name="SelectCountry" xml:space="preserve">
+    <value>اختر الدولة</value>
+  </data>
+  <data name="SelectDegrees" xml:space="preserve">
+    <value>اختر الدرجة</value>
+  </data>
+  <data name="SelectGenderType" xml:space="preserve">
+    <value>اختر الجنس</value>
+  </data>
+  <data name="SelectGovernorate" xml:space="preserve">
+    <value>اختر المحافظة</value>
+  </data>
+  <data name="SelectInstitution" xml:space="preserve">
+    <value>الجامعة\المعهد\المؤسسة المصدرة</value>
+  </data>
+  <data name="SelectLanguages" xml:space="preserve">
+    <value>اختر جميع اللغات</value>
+  </data>
+  <data name="SelectLocation" xml:space="preserve">
+    <value>يرجى اختيار المنطقة</value>
+  </data>
+  <data name="SelectLocationType" xml:space="preserve">
+    <value>يرجى اختيار نوع المنطقة</value>
+  </data>
+  <data name="SelectQualifications" xml:space="preserve">
+    <value>اختر التخصص</value>
+  </data>
+  <data name="SelectSubject" xml:space="preserve">
+    <value>اختر المادة</value>
+  </data>
+  <data name="SelectSubjects" xml:space="preserve">
+    <value>اختر جميع المواد</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>ارسال</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>تاريخ البداية</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="StudentRegistration" xml:space="preserve">
+    <value>تسجيل حساب طالب</value>
+  </data>
+  <data name="StudentRegistrationLegend" xml:space="preserve">
+    <value>أبحث عن معلم</value>
+  </data>
+  <data name="SubjectLegend" xml:space="preserve">
+    <value>قائمة المواد</value>
+  </data>
+  <data name="Subjects" xml:space="preserve">
+    <value>المواد</value>
+  </data>
+  <data name="TeacherRegistration" xml:space="preserve">
+    <value>التسجيل كمعلم</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>المستخدم</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="ValidPhoneVerificationCode" xml:space="preserve">
+    <value>رمز التحقق صحيح!</value>
+  </data>
+  <data name="ViewContactInformation" xml:space="preserve">
+    <value>عرض معلومات الاتصال</value>
+  </data>
+  <data name="ViewProfile" xml:space="preserve">
+    <value>عرض الملف</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>اسمك</value>
+  </data>
+  <data name="AboutUs" xml:space="preserve">
+    <value>من نحن</value>
+  </data>
+  <data name="AllCities" xml:space="preserve">
+    <value>المدن</value>
+  </data>
+  <data name="AllSubjects" xml:space="preserve">
+    <value>المواد المتوفرة</value>
+  </data>
+  <data name="ApplyDescription" xml:space="preserve">
+    <value>سجل الأن، عرّف عن نفسك ومؤهلاتك لمن يرغب بالتعلم منك، دع الجميع يستفيد من خبراتك وحقق عائد مادي بالمقابل.</value>
+  </data>
+  <data name="ApplyToday" xml:space="preserve">
+    <value>سجّل اليوم</value>
+  </data>
+  <data name="BecomeATutorOnMentoria" xml:space="preserve">
+    <value>انضم إلى شبكة مينتوريا</value>
+  </data>
+  <data name="BestMentors" xml:space="preserve">
+    <value>أفضل المعلمين</value>
+  </data>
+  <data name="BestMentorsDescription" xml:space="preserve">
+    <value>معلمون أثبتوا كفاءتهم في مجال التعليم من خلال اتباعهم أحدث الأساليب في ايصال المعلومة</value>
+  </data>
+  <data name="Compare" xml:space="preserve">
+    <value>قارن</value>
+  </data>
+  <data name="CompareDescription" xml:space="preserve">
+    <value>قارن بين المعلمين بحسب تقييماتهم وأراء المتعلمين بهم</value>
+  </data>
+  <data name="ContactHead" xml:space="preserve">
+    <value>لديك سؤال؟ &lt;br /&gt; نحن بالخدمة للإجابة عن جميع استفساراتك</value>
+  </data>
+  <data name="ContactMentors" xml:space="preserve">
+    <value>تواصل مع المعلمين</value>
+  </data>
+  <data name="ContactMentorsDescription" xml:space="preserve">
+    <value>استعرض معلومات الاتصال الخاصة بالمعلم</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="Copyrights" xml:space="preserve">
+    <value>جميع الحقوق محفوظة لشركة Mentoria @ {0}</value>
+  </data>
+  <data name="FindAMentor" xml:space="preserve">
+    <value>البحث عن معلم</value>
+  </data>
+  <data name="FindMentors" xml:space="preserve">
+    <value>البحث عن معلمين</value>
+  </data>
+  <data name="FindMentorsDescription" xml:space="preserve">
+    <value>ابحث عن معلمين بخطوات بسيطة</value>
+  </data>
+  <data name="FollowUs" xml:space="preserve">
+    <value>تابعونا على وسائل التواصل الاجتماعي</value>
+  </data>
+  <data name="FooterLanguages" xml:space="preserve">
+    <value>اللغات</value>
+  </data>
+  <data name="HowItWorks" xml:space="preserve">
+    <value>طريقة العمل</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="MostDemandedMentors" xml:space="preserve">
+    <value>المعلمون الأكثر طلباً</value>
+  </data>
+  <data name="OurCompany" xml:space="preserve">
+    <value>شركتنا</value>
+  </data>
+  <data name="OurMentors" xml:space="preserve">
+    <value>المعلمون</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>الصفحة المطلوبة غير موجودة</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+  <data name="Resources" xml:space="preserve">
+    <value>الموارد</value>
+  </data>
+  <data name="TermsOfService" xml:space="preserve">
+    <value>شروط الخدمة</value>
+  </data>
+  <data name="TrendingSubjects" xml:space="preserve">
+    <value>المواد الأكثر بحثاً</value>
+  </data>
+  <data name="TrendingSubjectsDescription" xml:space="preserve">
+    <value>لدينا معلمين في الكثير من المواد، موزعين على أكثر من مدينة، وفيمايلي المواد الأكثر بحثا بين طالبي العلم</value>
+  </data>
+  <data name="WelookingForMentors" xml:space="preserve">
+    <value>دائما نبحث عن معلمين للإنضمام إلى شبكة مينتوريا</value>
+  </data>
+  <data name="CommentsByLearnersInYourProfile" xml:space="preserve">
+    <value>هنا سوف تظهر تعليقات طالبي العلم  وتقييماتهم لك.</value>
+  </data>
+  <data name="ContactInfoGoesHere" xml:space="preserve">
+    <value>طلاب العلم سوف يحتاجون هذه المعلومات لكي يتواصلوا معك، يرجى تحديثها في حال قمت بتغيير رقم جوالك أو بريدك الالكتروني.</value>
+  </data>
+  <data name="DescribeYourself" xml:space="preserve">
+    <value>ضع معلومات عن خبراتك الشخصية وهواياتك</value>
+  </data>
+  <data name="EmailNotConfirmed" xml:space="preserve">
+    <value>لم تقم بتفعيل الحساب من بريدك الالكتروني</value>
+  </data>
+  <data name="EnterAllTheLanguages" xml:space="preserve">
+    <value>حدد جميع اللغات التي تستطيع تدريس المواد بها، تحتاج لتحديد لغة واحدة على الأقل لكي تظهر بنتائج البحث.</value>
+  </data>
+  <data name="FillInTheCities" xml:space="preserve">
+    <value>اختر المدن التي تفضل التدريس بها، تحتاج لمدينة واحدة على الأقل لكي تظهر ضمن نتائج البحث.</value>
+  </data>
+  <data name="HereYouIntroduceYourself" xml:space="preserve">
+    <value>من هنا تستطيع ان تقدم نفسك لطالبي العلم، يرجى الضغط على زر التالي لتبدأ بإعداد ملفك.</value>
+  </data>
+  <data name="ListAllUrQualification" xml:space="preserve">
+    <value>حدد مؤهلاتك العلمية لكي تثبت تمييزك بين زملائك.</value>
+  </data>
+  <data name="MeetYourProfile" xml:space="preserve">
+    <value>مرحبا بك</value>
+  </data>
+  <data name="NoLanguagesAdded" xml:space="preserve">
+    <value>لم يتم تحديد أية لغة</value>
+  </data>
+  <data name="NoLocationsAdded" xml:space="preserve">
+    <value>لم يتم تحديد أية مدينة</value>
+  </data>
+  <data name="NoSubjectsAdded" xml:space="preserve">
+    <value>لم يتم إضافة أية مادة</value>
+  </data>
+  <data name="NotReviewed" xml:space="preserve">
+    <value>لم يتم تدقيق الملف من قبل الإدارة بعد</value>
+  </data>
+  <data name="PhoneNotConfirmed" xml:space="preserve">
+    <value>لم نقم بالتأكد من رقم هاتفك الجوال</value>
+  </data>
+  <data name="PutUrGeneralInfo" xml:space="preserve">
+    <value>ضع معلوماتك العامة هنا</value>
+  </data>
+  <data name="SetUrProfilePicture" xml:space="preserve">
+    <value>ضع صورتك الشخصية</value>
+  </data>
+  <data name="SubjectsYouTeach" xml:space="preserve">
+    <value>اختر المواد التي تستطيع تدريسها، تحتاج مادة واحدة على الأقل لكي تظهر في نتائج البحث.</value>
+  </data>
+  <data name="YourProfileIsOfflineUntil" xml:space="preserve">
+    <value>ملفك الشخصي لن يظهر ضمن نتائج البحث حتى يتم إصلاح مايلي</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
+  </data>
+  <data name="DateOfBirthCard" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
+  </data>
+  <data name="PricePerhourCard" xml:space="preserve">
+    <value>أجرة الساعة</value>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>المشاهدات</value>
+  </data>
+  <data name="AnErrorOccurredWhileProcessingRequest" xml:space="preserve">
+    <value>عذراً، حدث خطأ اثناء معالجة طلبك.</value>
+  </data>
+  <data name="Bad" xml:space="preserve">
+    <value>سيئ</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+  <data name="ErrorConfirmingEmail" xml:space="preserve">
+    <value>حدث خطأ في تاكيد البريد الالكتروني يرجى إعادة المحاولة لاحقاً</value>
+  </data>
+  <data name="Excellent" xml:space="preserve">
+    <value>ممتاز</value>
+  </data>
+  <data name="Good" xml:space="preserve">
+    <value>جيد</value>
+  </data>
+  <data name="LockedOut" xml:space="preserve">
+    <value>مُقفل.</value>
+  </data>
+  <data name="OkEvaluation" xml:space="preserve">
+    <value>لابأس</value>
+  </data>
+  <data name="Terrible" xml:space="preserve">
+    <value>سيئ جداً</value>
+  </data>
+  <data name="ThisAccountLocked" xml:space="preserve">
+    <value>هذا الحساب مُقفل يرجى المحاولة لاحقاً</value>
+  </data>
+  <data name="WriteReviewHint" xml:space="preserve">
+    <value>اكتب تعليقاً...</value>
+  </data>
+  <data name="AddNewCityLegend" xml:space="preserve">
+    <value>إذا أردنا إضافة مدينة نصر مثلاً، سنقوم بتحديد محافظة القاهرة التي تتبع لها مدينة نصر، ثم نقوم بكتابة "مدينة نصر" في حقل الاسم و "Nasr City" في حقل الاسم اللاتيني.</value>
+  </data>
+  <data name="AddNewCityTitle" xml:space="preserve">
+    <value>أضف مدينة جديدة</value>
+  </data>
+  <data name="AddNewQualificationLegend" xml:space="preserve">
+    <value>إذا أردنا إضافة هندسةالبرمجيات مثلاً، سنقوم بكتابة "هندسة البرمجيات" في حقل الاسم، و "Software Engineering" في حقل الاسم اللاتيني.</value>
+  </data>
+  <data name="AddNewQualificationTitle" xml:space="preserve">
+    <value>أضف تخصص جديد</value>
+  </data>
+  <data name="AddNewSubjectLegend" xml:space="preserve">
+    <value>إذا أردنا إضافة الرياضيات مثلاً، سنقوم بكتابة "الرياضيات" في حقل الاسم، و "Math" في حقل الاسم اللاتيني.</value>
+  </data>
+  <data name="AddNewSubjectTitle" xml:space="preserve">
+    <value>أضف مادة جديدة</value>
+  </data>
+  <data name="Cant_Review_Yourself" xml:space="preserve">
+    <value>لا يمكنك تقييم نفسك.</value>
+  </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>تأكيد البريد الالكتروني</value>
+  </data>
+  <data name="InvitationCode" xml:space="preserve">
+    <value>رمز الدعوة</value>
+  </data>
+  <data name="MentorRegistrationLegend" xml:space="preserve">
+    <value>سجل الأن، عرّف عن نفسك ومؤهلاتك لمن يرغب بالتعلم منك، دع الجميع يستفيد من خبراتك وحقق عائد مادي بالمقابل.</value>
+  </data>
+  <data name="MentorRegistrationTitle" xml:space="preserve">
+    <value>أنشئ حساب معلم جديد</value>
+  </data>
+  <data name="UserLanguageLegend" xml:space="preserve">
+    <value>اختر جميع اللغات التي تقوم بتدريس موادك بها.</value>
+  </data>
+  <data name="UserLocationLegend" xml:space="preserve">
+    <value>اختر جميع المدن التي تقوم بالتدريس فيها، سيتمكن المستخدمون من البحث عنك من خلال هذه المدن.</value>
+  </data>
+  <data name="UserQualificationLegend" xml:space="preserve">
+    <value>إذا كان لديك درجة ماجستير في هندسة البرمجيات من جامعة القاهرة، قم باختيار "ماجستير" في حقل الدرجة، واختر "هندسة البرمجيات" في حقل التخصص، و ادخل "جامعة القاهرة،" في حقل المؤسسة المصدرة.</value>
+  </data>
+  <data name="UserSubjectLegend" xml:space="preserve">
+    <value>قم باختيار جميع المواد التي تقوم بتدريسها، سيتمكن المستخدمون من البحث عنك من خلال هذه المواد.</value>
+  </data>
+  <data name="ContactUsFormResponse" xml:space="preserve">
+    <value>شكراً لتواصلك مع مينتوريا، سيتم الرد في أقرب فرصة.</value>
+  </data>
+  <data name="EntityNotFound" xml:space="preserve">
+    <value>الكيان غير موجود</value>
+  </data>
+  <data name="Mentor" xml:space="preserve">
+    <value>معلم</value>
+  </data>
+  <data name="RegisterAs" xml:space="preserve">
+    <value>سجل حساب</value>
+  </data>
+  <data name="Student" xml:space="preserve">
+    <value>طالب</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>كلمة المرور غير صالحة (يجب أن تكون كلمة المرور بطول 6 على الاقل و تحوي أحرف صغيرة وكبيرة وأرقام ورموز خاصة)</value>
+  </data>
+</root>

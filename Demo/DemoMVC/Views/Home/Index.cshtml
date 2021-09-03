@@ -1,0 +1,134 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9" data-ng-app="materialAdmin" data-ng-controller="materialadminCtrl as mactrl"><![endif]-->
+<html data-ng-app="materialAdmin" data-ng-controller="materialadminCtrl as mactrl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Admin</title>
+
+    <!-- Vendor CSS -->
+    <link href="http://localhost:44444/Content/rushan/animate.min.css" rel="stylesheet">
+    <link href="http://localhost:44444/Content/rushan/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="http://localhost:44444/Content/rushan/sweet-alert.css" rel="stylesheet">
+    <link href="http://localhost:44444/Content/rushan/loading-bar.css" rel="stylesheet">
+    <link href="http://localhost:44444/Content/rushan/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="~/Content/rushan/app.min.1.css" rel="stylesheet" id="app-level">
+    <link href="~/Content/rushan/app.min.2.css" rel="stylesheet">
+    <link href="~/Content/rushan/demo.css" rel="stylesheet">
+
+</head>
+
+<body data-ng-class="{ 'sw-toggled': mactrl.layoutType === '1'}">
+
+    <data ui-view></data>
+
+    <!-- Older IE warning message -->
+    <!--[if lt IE 9]>
+        <div class="ie-warning">
+            <h1 class="c-white">Warning!!</h1>
+            <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+            <div class="iew-container">
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="img/browsers/chrome.png" alt="">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="img/browsers/firefox.png" alt="">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="img/browsers/opera.png" alt="">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="img/browsers/safari.png" alt="">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="img/browsers/ie.png" alt="">
+                            <div>IE (New)</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>Sorry for the inconvenience!</p>
+        </div>
+    <![endif]-->
+    <!-- Core -->
+    <script src="http://localhost:44444/Scripts/rushan/jquery.min.js"></script>
+
+    <!-- Angular -->
+    <script src="http://localhost:44444/Scripts/angular.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/angular-animate.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/angular-resource.min.js"></script>
+
+    <!-- Angular Modules -->
+    <script src="http://localhost:44444/Scripts/rushan/angular-ui-router.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/loading-bar.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/ocLazyLoad.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/ui-bootstrap-tpls.min.js"></script>
+
+    <!-- Common Vendors -->
+    <script src="http://localhost:44444/Scripts/rushan/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/sweet-alert.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/waves.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/bootstrap-growl.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/ng-table.min.js"></script>
+
+
+    <!-- Placeholder for IE9 -->
+    <!--[if IE 9 ]>
+        <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <![endif]-->
+    <!-- Using below vendors in order to avoid misloading on resolve -->
+    <script src="http://localhost:44444/Scripts/rushan/jquery.flot.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/curvedLines.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.flot.resize.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/moment.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/fullcalendar.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.flot.orderBars.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.flot.pie.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.flot.tooltip.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/nouislider.min.js"></script>
+
+
+    <!-- App level -->
+    <script src="~/Scripts/rushan/app.js"></script>
+    <script src="~/Scripts/rushan/config.js"></script>
+    <script src="~/Scripts/rushan/controllers/main.js"></script>
+    <script src="~/Scripts/rushan/services.js"></script>
+    <script src="~/Scripts/rushan/templates.js"></script>
+    <script src="~/Scripts/rushan/controllers/ui-bootstrap.js"></script>
+    <script src="~/Scripts/rushan/controllers/table.js"></script>
+
+
+    <!-- Template Modules -->
+    <script src="~/Scripts/rushan/modules/template.js"></script>
+    <script src="~/Scripts/rushan/modules/ui.js"></script>
+    <script src="~/Scripts/rushan/modules/charts/flot.js"></script>
+    <script src="~/Scripts/rushan/modules/charts/other-charts.js"></script>
+    <script src="~/Scripts/rushan/modules/form.js"></script>
+    <script src="~/Scripts/rushan/modules/media.js"></script>
+    <script src="~/Scripts/rushan/modules/components.js"></script>
+    <script src="~/Scripts/rushan/modules/calendar.js"></script>
+    <script src="~/Scripts/rushan/modules/demo.js"></script>
+</body>
+</html>

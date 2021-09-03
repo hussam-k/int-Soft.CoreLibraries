@@ -1,0 +1,85 @@
+﻿<div class="login-content toggled">
+    <div class="lc-block toggled" id="l-login">
+        <div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img ng-src="{{logoIconSource}}" />
+            </div>
+            <form class="col-lg-6 col-md-6 col-sm-12" data-ng-submit="login()" data-ng-if="mode === 'login'">
+                <div class="input-group m-b-20">
+                    <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                    <div class="fg-line">
+                        <input required data-ng-model="model.username" class="form-control" type="text"
+                               data-ng-required="true"
+                               data-ng-disabled="isLoading"
+                               placeholder="{{usernamePlaceHolder}}"
+                               autofocus />
+                    </div>
+                </div>
+                <div class="input-group m-b-20">
+                    <span class="input-group-addon"><i class="zmdi zmdi-key"></i></span>
+                    <div class="fg-line">
+                        <input required data-ng-model="model.password" type="password" class="form-control"
+                               data-ng-required="true"
+                               data-ng-disabled="isLoading"
+                               placeholder="{{passwordPlaceHolder}}" />
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <input type="submit" hidden />
+            </form>
+            <form class="col-lg-6 col-md-6 col-sm-12" data-ng-submit="forgotPassword()" data-ng-if="mode === 'forgotPassword'">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
+                        <input required type="email" ng-model="model.email" class="form-control"
+                               placeholder="{{emailPlaceHolder}}" />
+                    </div>
+                </div>
+                <input type="submit" hidden />
+            </form>
+            <form class="col-lg-6 col-md-6 col-sm-12" data-ng-submit="reactivate()" data-ng-if="mode === 'reactivate'">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
+                        <input required type="email" ng-model="model.email" class="form-control"
+                               placeholder="{{emailPlaceHolder}}" />
+                    </div>
+                </div>
+                <input type="submit" hidden />
+            </form>
+            <div class="col-lg-6 col-md-6 col-sm-12" data-ng-if="mode === 'confirmEmail'">
+                <div data-ng-if="successfulConfirmEmail === true">
+                    <h4 class="text-success"><i class="zmdi zmdi-check"></i>&nbsp;{{successfulConfirmEmailText}}</h4>
+                </div>
+                <div data-ng-if="!successfulConfirmEmail">
+                    <h4 class="text-danger"><i class="zmdi zmdi-close-circle"></i>&nbsp;{{failedConfirmEmailText}}</h4>
+                </div>
+            </div>
+        </div>
+        <button data-ng-if="mode === 'login'" class="btn btn-login btn-danger btn-float waves-effect waves-circle"
+                data-ng-disabled="isLoading"
+                data-ng-click="login()">
+            <i class="zmdi zmdi-mail-send"></i>
+        </button>
+        <button data-ng-if="mode === 'forgotPassword'" class="btn btn-login btn-danger btn-float waves-effect waves-circle"
+                data-ng-disabled="isLoading"
+                data-ng-click="forgotPassword()">
+            <i class="zmdi zmdi-mail-send"></i>
+        </button>
+        <button data-ng-if="mode === 'reactivate'" class="btn btn-login btn-danger btn-float waves-effect waves-circle"
+                data-ng-disabled="isLoading"
+                data-ng-click="reactivate()">
+            <i class="zmdi zmdi-mail-send"></i>
+        </button>
+        <button data-ng-if="mode === 'confirmEmail'" class="btn btn-login bgm-blue btn-float waves-effect waves-circle"
+                data-ng-disabled="isLoading"
+                data-ui-sref="home">
+            <i class="zmdi zmdi-home"></i>
+        </button>
+        <ul class="login-navigation">
+            <li class="bgm-green" ui-sref="accounts-login" data-ng-show="{{showLoginButton}}">{{loginText}}</li>
+            <li class="bgm-red" ui-sref="accounts-forgotPassword" data-ng-show="{{showForgotYourPasswordButton}}">{{forgotYourPasswordText}}</li>
+            <li class="bgm-orange" ui-sref="accounts-reactivate" data-ng-show="{{showReactivateButton}}">{{reactivateText}}</li>
+        </ul>
+    </div>
+</div>

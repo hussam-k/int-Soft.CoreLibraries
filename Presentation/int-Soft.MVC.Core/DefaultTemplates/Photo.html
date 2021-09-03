@@ -1,0 +1,18 @@
+﻿<div class="fileinput fileinput-new" data-provides="fileinput">
+    <div style="line-height: 150px;" class="fileinput-preview thumbnail" data-trigger="fileinput">
+    </div>
+    <div>
+        <span class="btn btn-info btn-file waves-effect">
+            <span class="fileinput-new">{3}</span>
+            <span class="fileinput-exists">{4}</span>
+            <input name="..." value="" type="hidden">
+            <input type="file" ngf-select ng-model="currentModel.{0}" name="{0}" accept="{1}" ngf-pattern="'{1}'" ngf-max-size="{2}" ngf-model-invalid="errorFile"
+                   onchange="angular.element(this).scope().form.{0}.$setTouched()">
+        </span>
+        <a href="#" class="btn btn-danger fileinput-exists waves-effect" data-dismiss="fileinput">{5}</a>
+    </div>
+</div>
+
+
+
+

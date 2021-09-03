@@ -1,0 +1,23 @@
+﻿<div data-current-skin-before="{{currentSkin}}">
+    <div class="login-content toggled">
+        <div class="lc-block toggled" id="l-login">
+            <div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img data-ng-src="{{logoIconSource}}" alt="" />
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div data-ng-if="successfulConfirmEmail === true">
+                        <h4 class="text-success"><i class="zmdi zmdi-check"></i>&nbsp;{{successfulConfirmEmailText}}</h4>
+                    </div>
+                    <div data-ng-if="successfulConfirmEmail === false">
+                        <h4 class="text-danger"><i class="zmdi zmdi-close-circle"></i>&nbsp;{{failedConfirmEmailText}}</h4>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-login bgm-blue btn-float waves-effect waves-circle"
+                    data-ng-disabled="isLoading" data-ui-sref="home">
+                <i class="zmdi zmdi-home"></i>
+            </button>
+        </div>
+    </div>
+</div>

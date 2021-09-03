@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Operations] (
+    [Id]   UNIQUEIDENTIFIER NOT NULL,
+    [Name] NVARCHAR (250)   NOT NULL,
+    CONSTRAINT [PK_Operations] PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [UC_Operations_Name] UNIQUE NONCLUSTERED ([Name] ASC)
+);
+

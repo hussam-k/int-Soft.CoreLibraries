@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3127E55-87BB-407E-8A25-5C18BE3E98D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>intSoft.MVC.Core</RootNamespace>
+    <AssemblyName>int-Soft.MVC.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Client, Version=2.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.SignalR.Client.2.2.1\lib\net45\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.SignalR.Core.2.2.1\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=2.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.2.1\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Mvc2Futures.2.0.50217.0\lib\Microsoft.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MlkPwgen, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MlkPwgen.0.2.0.0\lib\net45\MlkPwgen.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StructureMap, Version=4.2.0.402, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\structuremap.4.2.0.402\lib\net40\StructureMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StructureMap.Net4, Version=4.2.0.402, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\structuremap.4.2.0.402\lib\net40\StructureMap.Net4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\FindTeacher\Mentoria.Administration\Bin\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionResults\ChallengeResult.cs" />
+    <Compile Include="ActionResults\StandardJsonActionResult%27.cs" />
+    <Compile Include="ActionResults\StandardJsonActionResult.cs" />
+    <Compile Include="Attributes\AcceptedFileExtensionsAttribute.cs" />
+    <Compile Include="Attributes\DisplayAtAttribute.cs" />
+    <Compile Include="Attributes\MaxFileSizeAttribute.cs" />
+    <Compile Include="Attributes\CustomValidationAttribute.cs" />
+    <Compile Include="Bundles\DependencyBundleJsFileProvider.cs" />
+    <Compile Include="Bundles\TemplateBundleJsFileProvider.cs" />
+    <Compile Include="Bundles\FrameworkBundleJsFileProvider.cs" />
+    <Compile Include="Common\CommonRegularExpression.cs" />
+    <Compile Include="Controllers\ApprovableCrudControllerBase.cs" />
+    <Compile Include="Controllers\DetailCrudControllerBase.cs" />
+    <Compile Include="Controllers\LocalizationControllerBase.cs" />
+    <Compile Include="CustomModelBinder\CustomByteArrayModelBinder.cs" />
+    <Compile Include="CustomModelBinder\DefaultModelBinderBugResolver.cs" />
+    <Compile Include="CustomValueProvider\CreationDateUserIdValueProvider.cs" />
+    <Compile Include="CustomValueProvider\CreationDateUserIdValueProviderFactory.cs" />
+    <Compile Include="DefaultTemplates\Utility\AngularAttributeTemplates.cs" />
+    <Compile Include="DefaultTemplates\Utility\DefaultJavaScriptNames.cs" />
+    <Compile Include="DefaultTemplates\Utility\DefaultCssClasses.cs" />
+    <Compile Include="DefaultTemplates\Utility\ToolTipPlacement.cs" />
+    <Compile Include="Enumerations\DisplayAt.cs" />
+    <Compile Include="ExceptionHandling\SqlExceptionErrorCode.cs" />
+    <Compile Include="ExceptionHandling\SqlExceptionHandler.cs" />
+    <Compile Include="Exceptions\EmailNotConfirmedException.cs" />
+    <Compile Include="Extensions\Extensions.cs" />
+    <Compile Include="Extensions\HttpPostedFileBaseExtension.cs" />
+    <Compile Include="Extensions\DateExtensions.cs" />
+    <Compile Include="Extensions\EnumExtension.cs" />
+    <Compile Include="Extensions\LocalizableExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Extensions\UiGridDefinitionExtensions.cs" />
+    <Compile Include="Filters\LocalizationAttribute.cs" />
+    <Compile Include="Helpers\ButtonListProviders\DefaultFormButtonListProvider.cs" />
+    <Compile Include="Helpers\ButtonListProviders\ModalButtonListProvider.cs" />
+    <Compile Include="Bundles\BundleRenderer.cs" />
+    <Compile Include="Helpers\ColumnActionItemSettingListProviders\ApproveColumnActionItemSettingListProvider.cs" />
+    <Compile Include="Helpers\ColumnActionItemSettingListProviders\ApprovableColumnActionItemSettingListProvider.cs" />
+    <Compile Include="Helpers\ColumnActionItemSettingListProviders\DefaultColumnActionItemSettingListProvider.cs" />
+    <Compile Include="Helpers\ColumnActionItemSettingListProviders\DeleteColumnActionItemSettingListProvider.cs" />
+    <Compile Include="Bundles\IBundleFileProvider.cs" />
+    <Compile Include="Bundles\IBundleJsFileProvider.cs" />
+    <Compile Include="Bundles\IBundleStyleFileProvider.cs" />
+    <Compile Include="Helpers\IColumnActionItemSettingListProvider.cs" />
+    <Compile Include="Helpers\IEnumSelectListProvider.cs" />
+    <Compile Include="Helpers\IListHeaderContentProvider.cs" />
+    <Compile Include="Helpers\IActionListProvider.cs" />
+    <Compile Include="Helpers\IFormButtonListProvider.cs" />
+    <Compile Include="Helpers\ISelectListProvider.cs" />
+    <Compile Include="Helpers\ISideBarItemsProvider.cs" />
+    <Compile Include="Helpers\ListHeaderContentProviders\DraftListHeaderContentProvider.cs" />
+    <Compile Include="Helpers\ListHeaderContentProviders\EmptyListHeaderContentProvider.cs" />
+    <Compile Include="Helpers\ListHeaderContentProviders\ApprovableListHeaderContentProvider.cs" />
+    <Compile Include="Helpers\ListHeaderContentProviders\DefaultListHeaderContentProvider.cs" />
+    <Compile Include="Helpers\ResourceHelper.cs" />
+    <Compile Include="Helpers\UiGrid\DefaultUiGridDefinitionProvider.cs" />
+    <Compile Include="Helpers\UiGrid\IUiGridDefinitionProvider.cs" />
+    <Compile Include="Helpers\UiGrid\UiGridColumnAggregationType.cs" />
+    <Compile Include="Helpers\UiGrid\UiGridColumnDefinition.cs" />
+    <Compile Include="Helpers\UiGrid\UiGridColumnDefinitionContext.cs" />
+    <Compile Include="Helpers\UiGrid\UiGridColumnFilter.cs" />
+    <Compile Include="Helpers\UiGrid\UiGridColumnFilterCondition.cs" />
+    <Compile Include="Helpers\UiGrid\UiGridColumnFilterType.cs" />
+    <Compile Include="Helpers\UiGrid\UiGridColumnSelectOption.cs" />
+    <Compile Include="Helpers\UiGrid\UiGridColumnSort.cs" />
+    <Compile Include="Helpers\UiGrid\UiGridColumnSortDicrection.cs" />
+    <Compile Include="Helpers\UiGrid\UiGridColumnWidth.cs" />
+    <Compile Include="Helpers\UiGrid\UiGridDefinition.cs" />
+    <Compile Include="Helpers\UiGrid\UiGridDefinitionContext.cs" />
+    <Compile Include="Helpers\UiGrid\UiGridUnitType.cs" />
+    <Compile Include="HTMLHelperSettings\Base\EditorSettingBase.cs" />
+    <Compile Include="HTMLHelperSettings\Common\ActionSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Common\StateButtonSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Common\DisplaySetting.cs" />
+    <Compile Include="HTMLHelperSettings\Common\ModalSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Common\SideBarItemSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Editors\CheckBoxSettings.cs" />
+    <Compile Include="HTMLHelperSettings\Editors\ComboBoxSettings.cs" />
+    <Compile Include="Common\DefaultValuesBase.cs" />
+    <Compile Include="Controllers\AccountControllerBase.cs" />
+    <Compile Include="Controllers\ControllerBase.cs" />
+    <Compile Include="Controllers\CrudControllerBase.cs" />
+    <Compile Include="DefaultTemplates\Utility\HTMLTemplateProvider.cs" />
+    <Compile Include="DefaultTemplates\Utility\HTMLTemplates.cs" />
+    <Compile Include="Enumerations\ButtonType.cs" />
+    <Compile Include="Enumerations\DataDisplayType.cs" />
+    <Compile Include="Extensions\IdentityExtensions.cs" />
+    <Compile Include="Extensions\MetadataExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Filters\CustomValidateAntiForgeryTokenAttribute.cs" />
+    <Compile Include="Helpers\AntiForgeryTokenHelper.cs" />
+    <Compile Include="Helpers\EnumSelectListProvider.cs" />
+    <Compile Include="HTMLHelperSettings\Editors\FormGroupSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Common\HeaderSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Editors\MultilineTextBoxSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Editors\FileSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Lising\ListHeaderSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Lising\PagerSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Lising\UiGridSetting.cs" />
+    <Compile Include="HTMLHelperSettings\MasterDetail\DetailForMasterSetting.cs" />
+    <Compile Include="HTMLHelperSettings\MasterDetail\MasterListSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Lising\TableColumnActionItemSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Lising\ListSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Lising\TableSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Editors\FormSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Base\SettingsBase.cs" />
+    <Compile Include="HTMLHelperSettings\Editors\DateTimePickerSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Editors\TextBoxSetting.cs" />
+    <Compile Include="HTMLHelperSettings\Common\ButtonSetting.cs" />
+    <Compile Include="HTMLHelperSettings\MasterDetail\MasterForDetailSetting.cs" />
+    <Compile Include="HTMLHelpers\Common\IntSoftModelDisplayExtension.cs" />
+    <Compile Include="HTMLHelpers\Common\IntSoftPanelExtension.cs" />
+    <Compile Include="HTMLHelpers\Listing\IntSoftPagingExtension.cs" />
+    <Compile Include="HTMLHelpers\Listing\IntSoftListExtension.cs" />
+    <Compile Include="HTMLHelpers\Listing\IntSoftDraftListModelExtension.cs" />
+    <Compile Include="HTMLHelpers\Listing\IntSoftListModelExtension.cs" />
+    <Compile Include="HTMLHelpers\Editors\IntSoftPhotoExtension.cs" />
+    <Compile Include="HTMLHelpers\Editors\IntSoftComboBoxExtension.cs" />
+    <Compile Include="HTMLHelpers\Base\IntSoftHTMLHelperExtensions.cs" />
+    <Compile Include="HTMLHelpers\Editors\IntSoftModelExtension.cs" />
+    <Compile Include="HTMLHelpers\Editors\IntSoftFormExtension.cs" />
+    <Compile Include="HTMLHelpers\Listing\IntSoftUiGridExtension.cs" />
+    <Compile Include="HTMLHelpers\Listing\IntSoftTableExtension.cs" />
+    <Compile Include="HTMLHelpers\Editors\IntSoftDateExtension.cs" />
+    <Compile Include="HTMLHelpers\Editors\IntSoftCheckBoxExtension.cs" />
+    <Compile Include="HTMLHelpers\Editors\IntSoftValidationMessageExtension.cs" />
+    <Compile Include="HTMLHelpers\Editors\IntSoftTextBoxExtension.cs" />
+    <Compile Include="HTMLHelpers\Common\IntSoftButtonExtension.cs" />
+    <Compile Include="HTMLHelpers\Base\IntSoftExtension.cs" />
+    <Compile Include="HTMLHelpers\Base\IntSoftHelper.cs" />
+    <Compile Include="HTMLHelpers\MasterDetail\IntSoftMasterDetailListModelExtension.cs" />
+    <Compile Include="HTMLHelpers\MasterDetail\IntSoftDetailGridExtension.cs" />
+    <Compile Include="HTMLHelpers\MasterDetail\IntSoftMasterDisplayExtension.cs" />
+    <Compile Include="HTTPApplication\ApplicationConfiguration.cs" />
+    <Compile Include="HTTPApplication\HttpApplicationBase.cs" />
+    <Compile Include="HTTPApplication\LocalizationConfiguration.cs" />
+    <Compile Include="Identity\ApplicationAccountConfiguration.cs" />
+    <Compile Include="Identity\ICurrentUser.cs" />
+    <Compile Include="Identity\Models\UserRegisterModel.cs" />
+    <Compile Include="Identity\Models\UserLoginModel.cs" />
+    <Compile Include="Identity\UserManagerBase.cs" />
+    <Compile Include="Identity\UserSignInManagerBase.cs" />
+    <Compile Include="Identity\UserStoreBase.cs" />
+    <Compile Include="ModelWrappersBase\LocalizableModelWrapperBase.cs" />
+    <Compile Include="ModelWrappersBase\ModelWrapperBase.cs" />
+    <Compile Include="ModelWrappersBase\UserWrapperBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StructureMap\Base\StructureMapDependencyResolver.cs" />
+    <Compile Include="StructureMap\Registries\ActionFilterRegistry.cs" />
+    <Compile Include="Security\AuthorizationHelper.cs" />
+    <Compile Include="Security\CustomActionAuthorizationAttribute.cs" />
+    <Compile Include="Security\IntSoftAuthorizeAttribute.cs" />
+    <Compile Include="Security\IAuthorizationHelper.cs" />
+    <Compile Include="Security\OperationsHelper.cs" />
+    <Compile Include="Security\SecurityHelper.cs" />
+    <Compile Include="StructureMap\Base\StructureMapFilterProvider.cs" />
+    <Compile Include="StructureMap\Registries\ControllerConvention.cs" />
+    <Compile Include="StructureMap\Registries\ControllerRegistry.cs" />
+    <Compile Include="StructureMap\Registries\CoreLibsRegistry.cs" />
+    <Compile Include="StructureMap\Registries\MvcRegistry.cs" />
+    <Compile Include="StructureMap\Registries\StandardRegistry.cs" />
+    <Compile Include="StructureMap\Registries\TaskRegistry.cs" />
+    <Compile Include="Tasks\AntiForgeryTokenTask.cs" />
+    <Compile Include="Tasks\ITask\IRunAtAfterEachRequest.cs" />
+    <Compile Include="Tasks\ITask\IRunAtInit.cs" />
+    <Compile Include="Tasks\ITask\IRunAtStartup.cs" />
+    <Compile Include="Tasks\ITask\IRunOnEachRequest.cs" />
+    <Compile Include="Tasks\ITask\IRunOnErrors.cs" />
+    <Compile Include="Utilities\SmsService.cs" />
+    <Compile Include="Utilities\EmailService.cs" />
+    <Compile Include="Utilities\HubBase.cs" />
+    <Compile Include="Utilities\INotificationHub.cs" />
+    <Compile Include="Utilities\IntSoftSerializer.cs" />
+    <Compile Include="Utilities\InvitationCodeGenerator.cs" />
+    <Compile Include="Utilities\NotificationService.cs" />
+    <Compile Include="Utilities\ToStringJsonConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\FormSubmitButton.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\int-Soft.DAL\int-Soft.DAL.csproj">
+      <Project>{7B2033D1-A702-4D5E-959E-EFA413E555EE}</Project>
+      <Name>int-Soft.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\int-Soft.NetCore\int-Soft.NetCore.csproj">
+      <Project>{10F0A71D-AA91-4004-B204-9B7718907E11}</Project>
+      <Name>int-Soft.NetCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infrastructure\int-Soft.Res\int-Soft.Res.csproj">
+      <Project>{617B649B-ABFA-4455-847A-E599C77226F9}</Project>
+      <Name>int-Soft.Res</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\FormTemplate.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\PropertyEditor.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\FormGroup.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\ValidationMessage.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\TextBox.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Label.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Div.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Form.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Button.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Table.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\TableColumnHeader.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\TableColumnData.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\TableColumnAction.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\TableColumnActionItem.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\List.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\DateTime.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Date.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Time.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Multiline.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\CheckBox.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\ToggleCheckBox.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Combobox.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\ComboboxOption.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Captcha.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Photo.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\FormContainer.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Header.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\SideBar.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\SideBarProfile.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\SideBarItem.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\SideBarSubItem.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\SideBarMenuItem.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\PropertyDisplay.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Display.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Action.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\ComboboxCascade.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\MasterDetail.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\MasterList.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\DisplayHeader.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\MasterInfoTab.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\DetailsTabSet.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\DetailsTab.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\DetailList.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\PropertyHeaderDisplay.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\ComboboxRemote.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Modal.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\ModelHeader.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\ListHeader.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\NestedComboBoxesDate.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\Pager.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\UiGrid.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\UiGridColumnAction.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\UiGridColumnActionItem.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultTemplates\StateButton.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.1.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.1.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

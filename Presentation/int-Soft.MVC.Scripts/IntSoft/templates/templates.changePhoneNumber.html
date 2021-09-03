@@ -1,0 +1,57 @@
+﻿<div class="modal-header">
+    <h4 class="modal-title">
+        {{'CHANGE_PHONE_NUMBER' | translate}}
+        <a class="close c-white" data-ng-click="cancel()" data-dismiss="modal" aria-hidden="true">&times;</a>
+    </h4>
+</div>
+<div class="modal-body">
+    <form data-ng-submit="sendVerificationCode()" id="changePhoneNumberForm" name="changePhoneNumberForm" role="form" data-ng-if="codeSent !== true">
+        <div class="form-group input-group fg-float m-b-20" data-ng-class="{'has-error':form.password.$invalid && form.password.$touched}">
+            <span class="input-group-addon"><i class="zmdi zmdi-key"></i></span>
+            <div class="fg-line">
+                <input required data-ng-model="model.password" type="password" class="form-control"
+                       id="password" name="password"
+                       data-ng-required="true"
+                       data-ng-disabled="isLoading" />
+                <label class="fg-label">{{'CURRENT_PASSWORD' | translate}}</label>
+            </div>
+        </div>
+        <div class="form-group input-group fg-float m-b-20" data-ng-class="{'has-error':form.phoneNumber.$invalid && form.phoneNumber.$touched}">
+            <span class="input-group-addon"><i class="zmdi zmdi-phone"></i></span>
+            <div class="fg-line">
+                <input required data-ng-model="model.phoneNumber" class="form-control"
+                       id="phoneNumber" name="phoneNumber"
+                       data-input-mask="{mask: newPhoneNumberMask}"
+                       data-ng-required="true"
+                       data-ng-disabled="isLoading" />
+                <label class="fg-label">{{'NEW_PHONE_NUMBER'|translate}}</label>
+            </div>
+            <span class="help-block" data-ng-if="form.phoneNumber.$error.invalid && form.phoneNumber.$touched">{{'INVALID_PHONE_NUMBER' | translate}}</span>
+        </div>
+        <input type="submit" hidden />
+    </form>
+    <form data-ng-if="codeSent===true">
+        <div class="form-group fg-float input-group m-b-10" data-ng-class="{'has-error':invalidCode, 'has-success':validCode}">
+            <span class="input-group-addon"><i class="zmdi zmdi-phone"></i></span>
+            <div class="fg-line">
+                <input type="text" id="verificationCode" name="verificationCode" class="form-control"
+                       data-ng-model="model.verificationCode" data-ng-change="checkPhoneVerificationCode()"
+                       data-ng-minlength="codeLength" data-ng-maxlength="codeLength" />
+                <label class="fg-label">{{'PHONE_VERIFICATION_CODE' | translate}}</label>
+            </div>
+            <span class="help-block m-r-10 m-l-10" data-ng-if="invalidCode">
+                <i class="zmdi zmdi-close-circle"></i>&nbsp;{{'INVALID_PHONE_VERIFICATION_CODE' | translate}}
+            </span>
+            <span class="help-block m-r-10 m-l-10" data-ng-if="validCode">
+                <i class="zmdi zmdi-check"></i>&nbsp;{{'VALID_PHONE_VERIFICATION_CODE' | translate}}
+            </span>
+        </div>
+        <p data-ng-if="canResend === false && validCode !== true">{{'RESEND_MESSAGE' | translate}} {{timer | date: 'mm:ss'}}</p>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-close" data-ng-click="cancel()">{{'CANCEL' | translate}}</button>
+    <button type="button" class="btn btn-colors bgm-cyan" data-ng-if="codeSent!==true" data-ng-click="sendVerificationCode()">{{'SEND_CODE' | translate}}</button>
+    <button type="button" class="btn bgm-green" data-ng-if="codeSent === true && canResend === true" data-ng-click="sendVerificationCode()">{{'RESEND' | translate}}</button>
+    <button type="button" class="btn btn-colors bgm-cyan" data-ng-if="codeSent === true" data-ng-disabled="validCode !== true" data-ng-click="submitChangePhoneNumber()">{{'OK' | translate}}</button>
+</div>

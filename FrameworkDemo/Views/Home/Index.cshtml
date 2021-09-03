@@ -1,0 +1,105 @@
+﻿@model IEnumerable<IntSoft.DAL.Models.Operations>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <script src="http://localhost:44444/Scripts/angular.min.js"></script>
+    <script src="http://localhost:44444/Scripts/jquery-2.2.3.min.js"></script>
+    <script src="http://localhost:44444/Scripts/jquery.validate.min.js"></script>
+    <script src="http://localhost:44444/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="http://localhost:44444/Scripts/bootstrap.min.js"></script>
+    <script src="http://localhost:44444/Scripts/respond.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/moment.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/waves.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/angular-animate.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/angular-farbtastic.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/angular-resource.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/angular-ui-router.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/autosize.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.flot.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/bootstrap-datetimepicker.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/bootstrap-growl.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/chosen.jquery.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/chosen.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/curvedLines.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/fileinput.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/fullcalendar.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/input-mask.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.easypiechart.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.flot.orderBars.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.flot.pie.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.flot.resize.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.flot.tooltip.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.nouislider.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.simpleWeather.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/jquery.sparkline.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/lightGallery.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/loading-bar.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/mediaelement-and-player.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/ng-table.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/nouislider.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/ocLazyLoad.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/summernote.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/sweet-alert.min.js"></script>
+    <script src="http://localhost:44444/Scripts/rushan/ui-bootstrap-tpls.min.js"></script>
+
+
+
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/bootstrap.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/rushan/animate.min.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/rushan/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/rushan/chosen.min.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/rushan/farbtastic.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/rushan/fullcalendar.min.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/rushan/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/rushan/jquery.nouislider.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/rushan/lightGallery.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/rushan/loading-bar.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/rushan/material-design-iconic-font.min.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/rushan/mediaelementplayer.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/rushan/summernote.css" rel="stylesheet" />
+    <link href="http://localhost:44444/Content/rushan/sweet-alert.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <hr/>
+
+        @foreach (var operation in Model)
+        {
+            <h1>@operation.Name</h1>
+            <br/>
+        }
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+</body>
+</html>

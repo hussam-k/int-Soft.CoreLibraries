@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChangeFileText" xml:space="preserve">
+    <value>Change Image</value>
+  </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>Confirm Email</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>Date Of Birth</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Experience and hobbies</value>
+  </data>
+  <data name="DuplicatedEmail" xml:space="preserve">
+    <value>This email is already registered</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Invalid password (password must be at least 6 characters and contain one digit, one lowercase character, 1 uppercae character and one special character )</value>
+  </data>
+  <data name="LanguageLegend" xml:space="preserve">
+    <value>Language Legend</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="LatinName" xml:space="preserve">
+    <value>Latin Name</value>
+  </data>
+  <data name="LocationParent" xml:space="preserve">
+    <value>Location Parent</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="LocationType" xml:space="preserve">
+    <value>Location Type</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="Picture" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="PricePerHour" xml:space="preserve">
+    <value>Price Per Hour</value>
+  </data>
+  <data name="RemoveText" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="RequiredFieldMessage" xml:space="preserve">
+    <value>This field is required</value>
+  </data>
+  <data name="SelectFileText" xml:space="preserve">
+    <value>Select Image</value>
+  </data>
+  <data name="SelectLocation" xml:space="preserve">
+    <value>Select a location</value>
+  </data>
+  <data name="SelectLocationType" xml:space="preserve">
+    <value>Select location type</value>
+  </data>
+  <data name="SubjectLegend" xml:space="preserve">
+    <value>The list of all the subjects are</value>
+  </data>
+  <data name="Subjects" xml:space="preserve">
+    <value>Subjects</value>
+  </data>
+  <data name="MaxSizeExceed" xml:space="preserve">
+    <value>Maximum allowed file size is {0} MB</value>
+  </data>
+  <data name="NotAcceptedFile" xml:space="preserve">
+    <value>Not accepted file, the accepted file extensions are {0}.</value>
+  </data>
+  <data name="AccountInformation" xml:space="preserve">
+    <value>Account Information</value>
+  </data>
+  <data name="ForgotYourPassword" xml:space="preserve">
+    <value>Forgot Your Password?</value>
+  </data>
+  <data name="Reactivate" xml:space="preserve">
+    <value>Reactivate</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="RateMustBeSpecified" xml:space="preserve">
+    <value>rate must be specified</value>
+  </data>
+  <data name="DbErrorOccoured" xml:space="preserve">
+    <value>Error occoured while trying to save the object</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="SelectCities" xml:space="preserve">
+    <value>Select all cities</value>
+  </data>
+  <data name="SelectCountry" xml:space="preserve">
+    <value>Select country</value>
+  </data>
+  <data name="SelectGenderType" xml:space="preserve">
+    <value>Choose gender</value>
+  </data>
+  <data name="SelectGovernorate" xml:space="preserve">
+    <value>Select governorate</value>
+  </data>
+  <data name="SelectLanguages" xml:space="preserve">
+    <value>Select all languages</value>
+  </data>
+  <data name="SelectSubjects" xml:space="preserve">
+    <value>Select all subjects</value>
+  </data>
+  <data name="StudentRegistration" xml:space="preserve">
+    <value>Student Registration</value>
+  </data>
+  <data name="StudentRegistrationLegend" xml:space="preserve">
+    <value>Looking for a mentor</value>
+  </data>
+  <data name="BecomeATutor" xml:space="preserve">
+    <value>Become a tutor</value>
+  </data>
+  <data name="FindAMentor" xml:space="preserve">
+    <value>Find a mentor</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="TeacherRegistration" xml:space="preserve">
+    <value>Teacher Registration</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="BasicInformation" xml:space="preserve">
+    <value>Basic Information</value>
+  </data>
+  <data name="ProfileInformation" xml:space="preserve">
+    <value>Profile Information</value>
+  </data>
+  <data name="SelectDegrees" xml:space="preserve">
+    <value>Select degrees</value>
+  </data>
+  <data name="SelectInstitution" xml:space="preserve">
+    <value>Select Institution</value>
+  </data>
+  <data name="SelectQualifications" xml:space="preserve">
+    <value>Select qualifications</value>
+  </data>
+  <data name="Cant_Review_Yourself" xml:space="preserve">
+    <value>You can't review yourself!</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Operation" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="NumberOfOperations" xml:space="preserve">
+    <value>Number Of Operations</value>
+  </data>
+  <data name="NumberOfUsers" xml:space="preserve">
+    <value>Number Of Users</value>
+  </data>
+  <data name="RoleInformation" xml:space="preserve">
+    <value>Role Information</value>
+  </data>
+  <data name="PointsAmount" xml:space="preserve">
+    <value>Amount Of Points</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="Error_Occured_while_trying_to_review_the_teacher" xml:space="preserve">
+    <value>Error Occured while trying to review the teacher</value>
+  </data>
+  <data name="Teacher_Reviwed_successfully" xml:space="preserve">
+    <value>Teacher Reviwed successfully</value>
+  </data>
+  <data name="ViewProfile" xml:space="preserve">
+    <value>View profile</value>
+  </data>
+  <data name="ErrorOccourd" xml:space="preserve">
+    <value>Error Occourd</value>
+  </data>
+  <data name="EntityNotFound" xml:space="preserve">
+    <value>Entity Not Found</value>
+  </data>
+  <data name="ErrorOccouredWhileTryingToSaveData" xml:space="preserve">
+    <value>Error occoured while trying to save the object</value>
+  </data>
+  <data name="Cities" xml:space="preserve">
+    <value>Cities</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Governorate" xml:space="preserve">
+    <value>Governorate</value>
+  </data>
+  <data name="Qualifications" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="QualificationNameTemplate" xml:space="preserve">
+    <value>{0} degree in {1}, from {2}</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="Reviews" xml:space="preserve">
+    <value>Reviews</value>
+  </data>
+  <data name="ContactInformation" xml:space="preserve">
+    <value>Contact Information</value>
+  </data>
+  <data name="ViewContactInformation" xml:space="preserve">
+    <value>View Contact Information</value>
+  </data>
+  <data name="InvitationCode" xml:space="preserve">
+    <value>Invitation Code</value>
+  </data>
+  <data name="InvalidInvitationCode" xml:space="preserve">
+    <value>Invalid Invitation Code</value>
+  </data>
+  <data name="Notifications" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="NoNotifications" xml:space="preserve">
+    <value>No notifications</value>
+  </data>
+  <data name="ContactInformationInDescription" xml:space="preserve">
+    <value>Contact information misplaced.</value>
+  </data>
+  <data name="InappropriateProfileImage" xml:space="preserve">
+    <value>Inappropriate profile picture.</value>
+  </data>
+  <data name="NoLanguageSpecified" xml:space="preserve">
+    <value>No language was specified.</value>
+  </data>
+  <data name="NoLocationSpecified" xml:space="preserve">
+    <value>No location was specified.</value>
+  </data>
+  <data name="NoSubjectSpecified" xml:space="preserve">
+    <value>No subject was specified.</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="RejectionList" xml:space="preserve">
+    <value>Rejection reasons list</value>
+  </data>
+  <data name="RejectionListLegend" xml:space="preserve">
+    <value>Please check the candidate reasons behind the rejection.</value>
+  </data>
+  <data name="InvalidPhoneVerificationCode" xml:space="preserve">
+    <value>Invalide verification code!</value>
+  </data>
+  <data name="PhoneVerification" xml:space="preserve">
+    <value>Phone Verification</value>
+  </data>
+  <data name="PhoneVerificationNumberLabel" xml:space="preserve">
+    <value>Enter the code you recieved on your phone</value>
+  </data>
+  <data name="PhoneVerificationNumberPlaceHolder" xml:space="preserve">
+    <value>6 Digits code</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ValidPhoneVerificationCode" xml:space="preserve">
+    <value>Verification code is valid!</value>
+  </data>
+  <data name="NotRatedYet" xml:space="preserve">
+    <value>Not rated yet!</value>
+  </data>
+  <data name="IsEmailConfirmed" xml:space="preserve">
+    <value>Is Email Confirmed</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>Confirmed</value>
+  </data>
+  <data name="NotConfirmed" xml:space="preserve">
+    <value>Not Confirmed</value>
+  </data>
+  <data name="ApproveMentors" xml:space="preserve">
+    <value>Approve Mentors</value>
+  </data>
+  <data name="MentorsNeedToBeApproved" xml:space="preserve">
+    <value>Mentors need to be approved...</value>
+  </data>
+  <data name="PasswordsDontMatch" xml:space="preserve">
+    <value>Password and confirm do not match</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Current Password</value>
+  </data>
+  <data name="NewRmail" xml:space="preserve">
+    <value>New Email</value>
+  </data>
+  <data name="ResendPhoneVerificationCodeMessage" xml:space="preserve">
+    <value>Didn\'t recieve the code? You can resend the verification code after</value>
+  </data>
+  <data name="Resend" xml:space="preserve">
+    <value>Resend</value>
+  </data>
+  <data name="NewPhoneNumber" xml:space="preserve">
+    <value>New phone number</value>
+  </data>
+  <data name="CantFind" xml:space="preserve">
+    <value>Can't find</value>
+  </data>
+  <data name="LatinNameExist" xml:space="preserve">
+    <value>Latin name is already Exist</value>
+  </data>
+  <data name="EmailOrPhoneNotVerified" xml:space="preserve">
+    <value>You can't make this action before confirming your email and phone number.</value>
+  </data>
+  <data name="InvalidPhoneNumber" xml:space="preserve">
+    <value>Invalid Phone Number</value>
+  </data>
+  <data name="CantFindMyQualification" xml:space="preserve">
+    <value>Can't find my qualification</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="HowCanWeHelpYou" xml:space="preserve">
+    <value>How can we help you ? (1000 character)</value>
+  </data>
+  <data name="YouHaveExceedTheMaximunLength" xml:space="preserve">
+    <value>You have exceed the maximun length</value>
+  </data>
+  <data name="EmailIsInvalid" xml:space="preserve">
+    <value>Email is invalid</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>Your name</value>
+  </data>
+  <data name="MentorName" xml:space="preserve">
+    <value>Mentor name</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchByMentorName" xml:space="preserve">
+    <value>Search by mentor name</value>
+  </data>
+  <data name="SelectCity" xml:space="preserve">
+    <value>Select city</value>
+  </data>
+  <data name="SelectSubject" xml:space="preserve">
+    <value>Select subject</value>
+  </data>
+  <data name="ClearFilters" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="AttachmentFile" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="SelectAttachmentFile" xml:space="preserve">
+    <value>Select an attachment file</value>
+  </data>
+  <data name="ChangeAttachmentFile" xml:space="preserve">
+    <value>Change attachment file</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="ContactUsFormResponse" xml:space="preserve">
+    <value>Thank you for your message and we will reply soon.</value>
+  </data>
+  <data name="MostDemandedMentorsTemplate" xml:space="preserve">
+    <value>{0} mentors in {1}</value>
+  </data>
+  <data name="AboutUs" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="AllCities" xml:space="preserve">
+    <value>All Cities</value>
+  </data>
+  <data name="AllSubjects" xml:space="preserve">
+    <value>Subjects available</value>
+  </data>
+  <data name="ApplyDescription" xml:space="preserve">
+    <value>apply now, introduce yourself to learners, advertise your qualification to make money and increase your income</value>
+  </data>
+  <data name="ApplyToday" xml:space="preserve">
+    <value>APPLY TODAY</value>
+  </data>
+  <data name="BecomeATutorOnMentoria" xml:space="preserve">
+    <value>Become a mentor on Mentoria</value>
+  </data>
+  <data name="BestMentors" xml:space="preserve">
+    <value>Best Mentors</value>
+  </data>
+  <data name="BestMentorsDescription" xml:space="preserve">
+    <value>Mentors recommended by Mentoria users for high quality and effective educational practices.</value>
+  </data>
+  <data name="Compare" xml:space="preserve">
+    <value>Compare</value>
+  </data>
+  <data name="CompareDescription" xml:space="preserve">
+    <value>Compare between mentors reviews</value>
+  </data>
+  <data name="ContactHead" xml:space="preserve">
+    <value>Have Question ?&lt;br /&gt;  We're here to lend a hand.</value>
+  </data>
+  <data name="ContactMentors" xml:space="preserve">
+    <value>Contact Mentors</value>
+  </data>
+  <data name="ContactMentorsDescription" xml:space="preserve">
+    <value>Get contact info</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="Copyrights" xml:space="preserve">
+    <value>Copyright @ {0} Mentoria. All rights reserved</value>
+  </data>
+  <data name="FindMentors" xml:space="preserve">
+    <value>Find mentors</value>
+  </data>
+  <data name="FindMentorsDescription" xml:space="preserve">
+    <value>Find mentors in easy steps</value>
+  </data>
+  <data name="FollowUs" xml:space="preserve">
+    <value>Follow us</value>
+  </data>
+  <data name="FooterLanguages" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="HowItWorks" xml:space="preserve">
+    <value>How it works</value>
+  </data>
+  <data name="MostDemandedMentors" xml:space="preserve">
+    <value>Most demanded mentors</value>
+  </data>
+  <data name="OurCompany" xml:space="preserve">
+    <value>Our company</value>
+  </data>
+  <data name="OurMentors" xml:space="preserve">
+    <value>Our mentors</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>Page not found</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Resources</value>
+  </data>
+  <data name="TermsOfService" xml:space="preserve">
+    <value>Terms of services</value>
+  </data>
+  <data name="TrendingSubjects" xml:space="preserve">
+    <value>Trending Subjects</value>
+  </data>
+  <data name="TrendingSubjectsDescription" xml:space="preserve">
+    <value>We have mentors in different subjects over different cities. Here's what learners are searching for</value>
+  </data>
+  <data name="WelookingForMentors" xml:space="preserve">
+    <value>We are always looking for mentors to join our network.</value>
+  </data>
+  <data name="CommentsByLearnersInYourProfile" xml:space="preserve">
+    <value>A list of people comments on your profile will be found here.</value>
+  </data>
+  <data name="ContactInfoGoesHere" xml:space="preserve">
+    <value>And here goes the connection information students need to contact you. Make sure you always keep them up to date.</value>
+  </data>
+  <data name="DateOfBirthCard" xml:space="preserve">
+    <value>Date of Birth:</value>
+  </data>
+  <data name="DescribeYourself" xml:space="preserve">
+    <value>Describe yourself and impress !  Try putting in some information about your experiences and hobbies.</value>
+  </data>
+  <data name="EmailNotConfirmed" xml:space="preserve">
+    <value>Email not confirmed</value>
+  </data>
+  <data name="EnterAllTheLanguages" xml:space="preserve">
+    <value>Select all the languages you teach in. Your profile needs at least one language to be visible to hungry students.</value>
+  </data>
+  <data name="FillInTheCities" xml:space="preserve">
+    <value>Select all the cities you are willing to teach in. Your profile needs at least one location to be visible to hungry students.</value>
+  </data>
+  <data name="HereYouIntroduceYourself" xml:space="preserve">
+    <value>This is the place where you introduce yourself to the world. Click next to start setting up your profile.</value>
+  </data>
+  <data name="ListAllUrQualification" xml:space="preserve">
+    <value>A list with all your qualifications will always be a plus ;)</value>
+  </data>
+  <data name="MeetYourProfile" xml:space="preserve">
+    <value>Meet your profile</value>
+  </data>
+  <data name="NoLanguagesAdded" xml:space="preserve">
+    <value>No languages added</value>
+  </data>
+  <data name="NoLocationsAdded" xml:space="preserve">
+    <value>No locations added</value>
+  </data>
+  <data name="NoSubjectsAdded" xml:space="preserve">
+    <value>No subjects added</value>
+  </data>
+  <data name="NotReviewed" xml:space="preserve">
+    <value>Not reviewed</value>
+  </data>
+  <data name="PhoneNotConfirmed" xml:space="preserve">
+    <value>Phone not confirmed</value>
+  </data>
+  <data name="PricePerhourCard" xml:space="preserve">
+    <value>Price per hour:</value>
+  </data>
+  <data name="PutUrGeneralInfo" xml:space="preserve">
+    <value>Your basic information goes here.</value>
+  </data>
+  <data name="SetUrProfilePicture" xml:space="preserve">
+    <value>Set up your profile picture here.</value>
+  </data>
+  <data name="SubjectsYouTeach" xml:space="preserve">
+    <value>Subjects you teach and master. Your profile needs at least one subject to be visible to students.</value>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>Views</value>
+  </data>
+  <data name="YourProfileIsOfflineUntil" xml:space="preserve">
+    <value>Your profile is offline until you fix these points</value>
+  </data>
+  <data name="AnErrorOccurredWhileProcessingRequest" xml:space="preserve">
+    <value>An error occurred while processing your request</value>
+  </data>
+  <data name="Bad" xml:space="preserve">
+    <value>Bad</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrorConfirmingEmail" xml:space="preserve">
+    <value>Error confirming your email ! please try again later.</value>
+  </data>
+  <data name="Excellent" xml:space="preserve">
+    <value>Excellent</value>
+  </data>
+  <data name="Good" xml:space="preserve">
+    <value>Good</value>
+  </data>
+  <data name="LockedOut" xml:space="preserve">
+    <value>Locked out</value>
+  </data>
+  <data name="OkEvaluation" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="Terrible" xml:space="preserve">
+    <value>Terrible</value>
+  </data>
+  <data name="ThisAccountLocked" xml:space="preserve">
+    <value>This account has been locked out, please try again later.</value>
+  </data>
+  <data name="WriteReviewHint" xml:space="preserve">
+    <value>Type a review...</value>
+  </data>
+  <data name="AddNewCityLegend" xml:space="preserve">
+    <value>If we wanted to add Nasr City, for example, we would select Cairo as the governorate to which Nasr city belongs, then we would type (مدينة نصر) in The Name Field and (Nasr City) in the Latin Name Field.</value>
+  </data>
+  <data name="AddNewCityTitle" xml:space="preserve">
+    <value>Add a new city</value>
+  </data>
+  <data name="AddNewQualificationLegend" xml:space="preserve">
+    <value>If we wanted to add Software Engineering as a qualification, we would type (هندسة البرمجيات) in the Name Field and (Software Engineering) in the Latin Name Field.</value>
+  </data>
+  <data name="AddNewQualificationTitle" xml:space="preserve">
+    <value>Add a new qualification</value>
+  </data>
+  <data name="AddNewSubjectLegend" xml:space="preserve">
+    <value>If we wanted to add Math subject, for example, we would type (رياضيات) in the Name Field and (Math) in the Latin Name Field.</value>
+  </data>
+  <data name="AddNewSubjectTitle" xml:space="preserve">
+    <value>Add a new subject</value>
+  </data>
+  <data name="MentorRegistrationLegend" xml:space="preserve">
+    <value>apply now, introduce yourself to learners, advertise your qualification to make money and increase your income</value>
+  </data>
+  <data name="MentorRegistrationTitle" xml:space="preserve">
+    <value>Register as a mentor</value>
+  </data>
+  <data name="UserLanguageLegend" xml:space="preserve">
+    <value>Select all the languages in which you can teach the selected subjects</value>
+  </data>
+  <data name="UserLocationLegend" xml:space="preserve">
+    <value>Select all the cities you are willing to teach in, learners will look you up using these cities</value>
+  </data>
+  <data name="UserQualificationLegend" xml:space="preserve">
+    <value>If you have a Master's degree in software engineering from Cairo University, then choose "Master" in the degree field, "Software Engineering" in the qualification field, and type "Cairo University" in the institution field.</value>
+  </data>
+  <data name="UserSubjectLegend" xml:space="preserve">
+    <value>Select all the subject you teach and master, learners will look you up using these subjects</value>
+  </data>
+  <data name="Mentor" xml:space="preserve">
+    <value>Mentor</value>
+  </data>
+  <data name="RegisterAs" xml:space="preserve">
+    <value>Register As</value>
+  </data>
+  <data name="Student" xml:space="preserve">
+    <value>Student</value>
+  </data>
+</root>

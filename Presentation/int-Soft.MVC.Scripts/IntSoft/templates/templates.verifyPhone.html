@@ -1,0 +1,37 @@
+﻿<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">
+                {{phoneVerificationTitle}}
+                <a class="close c-white" data-ng-click="cancel()" data-dismiss="modal" aria-hidden="true">&times;</a>
+            </h4>
+
+        </div>
+        <div class="modal-body">
+            <div class="form-group" data-ng-class="{'has-error':invalidCode, 'has-success':validCode}">
+                <div class="fg-line">
+                    <label for="verificationCode" class="control-label">{{phoneVerificationNumberLabel}} ({{phoneNumber}})</label>
+                    <input type="text" id="verificationCode" name="verificationCode" class="form-control"
+                           data-ng-model="verificationCode" data-ng-change="checkPhoneVerificationCode()"
+                           data-ng-minlength="codeLength" data-ng-maxlength="codeLength"
+                           placeholder="{{phoneVerificationNumberPlaceHolder}}" />
+                </div>
+                <span class="help-block" data-ng-if="invalidCode">
+                    <i class="zmdi zmdi-close-circle"></i>&nbsp;{{invalidPhoneVerificationCode}}
+                </span>
+                <span class="help-block" data-ng-if="validCode">
+                    <i class="zmdi zmdi-check"></i>&nbsp;{{validPhoneVerificationCode}}
+                </span>
+            </div>
+            <p data-ng-if="canResend === false">{{resendMessage}} {{timer | date: 'mm:ss'}}</p>
+        </div>
+        <div class="modal-footer">
+            <input type="button" class="btn bgm-green waves-button" data-ng-click="sendVerificationCode()"
+                   data-ng-show="canResend"
+                   value="{{resendButtonText}}" />
+            <input type="button" class="btn bgm-cyan waves-button" data-ng-click="submit()"
+                   data-ng-enabled="invalidCode"
+                   value="{{okButtonText}}" />
+        </div>
+    </div>
+</div>
