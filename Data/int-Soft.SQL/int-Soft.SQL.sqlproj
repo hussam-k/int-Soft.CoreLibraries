@@ -74,7 +74,4 @@
     <Build Include="Database\dbo\Operations.sql" />
     <Build Include="Database\dbo\RoleOperation.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Motaz-pc.publish.xml" />
-  </ItemGroup>
 </Project>

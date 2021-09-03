@@ -13,10 +13,6 @@ namespace intSoft.MVC.Core.Utilities
         {
             var freeList = new List<string>
             {
-                "+201093699196",
-                "+201121934669",
-                "+201001683081",
-                "+963999054520"
             };
             if (!freeList.Contains(message.Destination))
                 await Task.FromResult(0);

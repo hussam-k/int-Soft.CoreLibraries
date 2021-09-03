@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31612.314
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{48925056-9717-4654-8BCF-BCDB490A35B2}"
 EndProject
@@ -16,8 +16,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "int-Soft.MVC.Core", "Presentation\int-Soft.MVC.Core\int-Soft.MVC.Core.csproj", "{C3127E55-87BB-407E-8A25-5C18BE3E98D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "int-Soft.MVC.Scripts", "Presentation\int-Soft.MVC.Scripts\int-Soft.MVC.Scripts.csproj", "{213F5B97-A74E-40BF-BD30-5B1BF9CAEBF8}"
-EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "int-Soft.SQL", "Database1\int-Soft.SQL.sqlproj", "{2DCAA46F-ACCB-4E64-A228-2283FA509C78}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "int-Soft.DAL", "Data\int-Soft.DAL\int-Soft.DAL.csproj", "{7B2033D1-A702-4D5E-959E-EFA413E555EE}"
 EndProject
@@ -36,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "int-Soft.MVC.Core.Tests", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "int-Soft.NetCore.Tests", "Test\int-Soft.NetCore.Tests\int-Soft.NetCore.Tests.csproj", "{FA95E472-D1BD-4474-9BE6-E8B1CC767921}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "int-Soft.SQL", "Data\int-Soft.SQL\int-Soft.SQL.sqlproj", "{2DCAA46F-ACCB-4E64-A228-2283FA509C78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,10 +50,6 @@ Global
 		{213F5B97-A74E-40BF-BD30-5B1BF9CAEBF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{213F5B97-A74E-40BF-BD30-5B1BF9CAEBF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{213F5B97-A74E-40BF-BD30-5B1BF9CAEBF8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2DCAA46F-ACCB-4E64-A228-2283FA509C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2DCAA46F-ACCB-4E64-A228-2283FA509C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2DCAA46F-ACCB-4E64-A228-2283FA509C78}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2DCAA46F-ACCB-4E64-A228-2283FA509C78}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{7B2033D1-A702-4D5E-959E-EFA413E555EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7B2033D1-A702-4D5E-959E-EFA413E555EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B2033D1-A702-4D5E-959E-EFA413E555EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -72,6 +68,12 @@ Global
 		{FA95E472-D1BD-4474-9BE6-E8B1CC767921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FA95E472-D1BD-4474-9BE6-E8B1CC767921}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA95E472-D1BD-4474-9BE6-E8B1CC767921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DCAA46F-ACCB-4E64-A228-2283FA509C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DCAA46F-ACCB-4E64-A228-2283FA509C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DCAA46F-ACCB-4E64-A228-2283FA509C78}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2DCAA46F-ACCB-4E64-A228-2283FA509C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DCAA46F-ACCB-4E64-A228-2283FA509C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DCAA46F-ACCB-4E64-A228-2283FA509C78}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,49 +83,14 @@ Global
 		{8DC1DFDA-80BA-4C0B-BAC6-043843D48705} = {48925056-9717-4654-8BCF-BCDB490A35B2}
 		{C3127E55-87BB-407E-8A25-5C18BE3E98D1} = {B789CA18-102B-4E62-B831-CE93145DCE4B}
 		{213F5B97-A74E-40BF-BD30-5B1BF9CAEBF8} = {B789CA18-102B-4E62-B831-CE93145DCE4B}
-		{2DCAA46F-ACCB-4E64-A228-2283FA509C78} = {E79AE74E-8977-4718-B51B-C76111CEAFC8}
 		{7B2033D1-A702-4D5E-959E-EFA413E555EE} = {E79AE74E-8977-4718-B51B-C76111CEAFC8}
 		{10F0A71D-AA91-4004-B204-9B7718907E11} = {2C3546A8-EF18-48AA-82EC-01F293F0EA12}
 		{617B649B-ABFA-4455-847A-E599C77226F9} = {2C3546A8-EF18-48AA-82EC-01F293F0EA12}
 		{C1434B49-1DD7-4F39-B7EA-1D0E5F3EBCCE} = {C1A7F499-5193-4956-BD36-BA3A4DFF9682}
 		{FA95E472-D1BD-4474-9BE6-E8B1CC767921} = {C1A7F499-5193-4956-BD36-BA3A4DFF9682}
+		{2DCAA46F-ACCB-4E64-A228-2283FA509C78} = {E79AE74E-8977-4718-B51B-C76111CEAFC8}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 9
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://hussamkwedir.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Presentation\\int-Soft.MVC.Core\\int-Soft.MVC.Core.csproj
-		SccProjectTopLevelParentUniqueName1 = int-Soft.CoreLibraries.sln
-		SccProjectName1 = Presentation/int-Soft.MVC.Core
-		SccLocalPath1 = Presentation\\int-Soft.MVC.Core
-		SccProjectUniqueName2 = Presentation\\int-Soft.MVC.Scripts\\int-Soft.MVC.Scripts.csproj
-		SccProjectTopLevelParentUniqueName2 = int-Soft.CoreLibraries.sln
-		SccProjectName2 = Presentation/int-Soft.MVC.Scripts
-		SccLocalPath2 = Presentation\\int-Soft.MVC.Scripts
-		SccProjectUniqueName3 = Database1\\int-Soft.SQL.sqlproj
-		SccProjectTopLevelParentUniqueName3 = int-Soft.CoreLibraries.sln
-		SccProjectName3 = Database1
-		SccLocalPath3 = Database1
-		SccProjectUniqueName4 = Data\\int-Soft.DAL\\int-Soft.DAL.csproj
-		SccProjectTopLevelParentUniqueName4 = int-Soft.CoreLibraries.sln
-		SccProjectName4 = Data/int-Soft.DAL
-		SccLocalPath4 = Data\\int-Soft.DAL
-		SccProjectUniqueName5 = Infrastructure\\int-Soft.NetCore\\int-Soft.NetCore.csproj
-		SccProjectTopLevelParentUniqueName5 = int-Soft.CoreLibraries.sln
-		SccProjectName5 = Infrastructure/int-Soft.NetCore
-		SccLocalPath5 = Infrastructure\\int-Soft.NetCore
-		SccProjectUniqueName6 = Infrastructure\\int-Soft.Res\\int-Soft.Res.csproj
-		SccProjectTopLevelParentUniqueName6 = int-Soft.CoreLibraries.sln
-		SccProjectName6 = Infrastructure/int-Soft.Res
-		SccLocalPath6 = Infrastructure\\int-Soft.Res
-		SccProjectUniqueName7 = Test\\int-Soft.MVC.Core.Tests\\int-Soft.MVC.Core.Tests.csproj
-		SccProjectTopLevelParentUniqueName7 = int-Soft.CoreLibraries.sln
-		SccProjectName7 = Test/int-Soft.MVC.Core.Tests
-		SccLocalPath7 = Test\\int-Soft.MVC.Core.Tests
-		SccProjectUniqueName8 = Test\\int-Soft.NetCore.Tests\\int-Soft.NetCore.Tests.csproj
-		SccProjectTopLevelParentUniqueName8 = int-Soft.CoreLibraries.sln
-		SccProjectName8 = Test/int-Soft.NetCore.Tests
-		SccLocalPath8 = Test\\int-Soft.NetCore.Tests
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05E61629-460A-4887-A443-30E3C252CA62}
 	EndGlobalSection
 EndGlobal
